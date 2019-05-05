@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FCC Survey Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 id='title'>Political Survey</h1>
+      </header>
+
+      <form id='survey-form'>
+
+        <p id='description'>This survey is designed to capture the submiters political opinion during week two of the campaign.</p>
+
+        <div class='name-area split'>
+          <label for='name' id="name-label"><span>*</span> Name:</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class='email-area split'>
+          <label for='email-address' id="email-label"><span>*</span> Email:</label>
+          <input type="email" name="email-address" id="email" placeholder="Enter your Email address" required>
+        </div>
+
+        <div class='age-area split'>
+          <label for='age' id="number-label"><span>*</span> Age:</label>
+          <input type="number" name="age" id="number" placeholder="Enter your Age" min="0" max="125" required>
+        </div>
+
+        <div class='dropdown-area split'>
+          <label for='politics' id="dropdown-label">Which option best describes your level of interest in politics?</label>
+          <select class='dropdown-choice' id='dropdown'>
+            <option value="very-interested">Very Interested</option>
+            <option value="somewhat-interested" selected>Somewhat Interested</option>
+            <option value="not-interested">Not Interested</option>
+            <option value="dont-care">I don't care, they're all the same.</option>
+          </select>
+        </div>
+
+        <div class='party-area split'>
+          <label for='likely' id="party-likely-label">How likely is it you will vote for a major party at the next election?</label>
+          <div class='party-likely'>
+            <input type="radio" name="likely" value="very-likely"> &nbspVery Likely<br>
+            <input type="radio" name="likely" value="somewhat-likely"> &nbspSomewhat Likely<br>
+            <input type="radio" name="likely" value="not-likely"> &nbspNot Likely
+          </div>
+        </div>
+
+        <div class='current-views-area split'>
+          <label for='party' id="current-views-label">Based on you current knowledge, for which party or parties are you more likely to vote?</label>
+          <div class='current-views-choice'>
+            <input type="checkbox" name="party" value="GRN" id='party'> &nbspThe Greens<br>
+            <input type="checkbox" name="party" value="LAB" id='party'> &nbspLabor<br>
+            <input type="checkbox" name="party" value="LNP" id='party'> &nbspLiberal National <br>
+            <input type="checkbox" name="party" value="ONP" id='party'> &nbspOne Nation<br>
+            <input type="checkbox" name="party" value="UAP" id='party'> &nbspUnited Australia<br>
+            <input type="checkbox" name="party" value="IND" id='party'> &nbspIndependent<br>
+            <input type="checkbox" name="party" value="Other" id='party'> &nbspOther<br>
+            <input type="checkbox" name="party" value="Donkey" id='party'> &nbspDonkey Vote<br>
+          </div>
+        </div>
+
+        <div class='comment-area split'>
+          <label for='comment' id="comment-area-label">Any other information you would like to share with us?</label>
+          <textarea id="comment-area-comments" name="comment" rows="5" cols="50" placeholder='Add your comments here....'></textarea>
+        </div>
+
+        <div class='submit-area nosplit'>
+          <input type="submit" id="submit">
+        </div>
+
+        <div class='name-area'></div>
+        <div class='name-area'></div>
+        <div class='name-area'></div>
+        <div class='name-area'></div>
+        <div class='name-area'></div>
+
+      </form>
+    </main>
+  </body>
+</html>
